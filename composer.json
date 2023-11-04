@@ -1,0 +1,22 @@
+{
+  "name": "br0unde/algoritms",
+  "authors": [
+    {
+      "name": "Rinat idiyatullin"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Br0unde\\Algoritms\\": "src/"
+    }
+  },
+  "require": {
+    "php": "8.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.4"
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit tests"
+  }
+}
