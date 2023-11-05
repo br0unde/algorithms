@@ -18,7 +18,10 @@ class MergeSort implements ISort
         return $this->mergeSort($array, $firstIndex, $lastIndex);
     }
 
-    private function mergeSort(array &$array, $firstIndex, $lastIndex): ?array
+    private function mergeSort(
+        array &$array,
+        int $firstIndex,
+        int $lastIndex): ?array
     {
         if ($lastIndex <= $firstIndex) {
             return null;
@@ -30,7 +33,12 @@ class MergeSort implements ISort
         return $this->merge($array, $firstIndex, $middleIndex, $lastIndex);
     }
 
-    private function merge(&$array, $firstIndex, $middleIndex, $lastIndex): array
+    private function merge(
+        array &$array,
+        int $firstIndex,
+        int $middleIndex,
+        int $lastIndex
+    ): array
     {
 
         $leftCount = $middleIndex - $firstIndex + 1;
